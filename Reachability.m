@@ -25,6 +25,8 @@
  POSSIBILITY OF SUCH DAMAGE. 
  */
 
+#if REQUIRES_HATCHBACK == 0
+
 #import "Reachability.h"
 
 
@@ -525,3 +527,5 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
 }
 
 @end
+
+#endif
